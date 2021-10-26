@@ -32,7 +32,7 @@ function save($table, $data)
     foreach ($data as $k => $v) {
         $tbl->$k = $v;
     }
-    return R::store($tbl);
+    return a::store($tbl);
 }
 
 function debug($data)
